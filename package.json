@@ -6,7 +6,8 @@
     "flow": "flow",
     "format": "npm run prettier -- --write",
     "prettier": "prettier \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\"",
-    "validate": "npm run lint && npm run prettier -- --list-different && npm run flow"
+    "validate": "npm run lint && npm run prettier -- --list-different && npm run flow",
+    "precommit": "npm run validate"
   },
   "keywords": [],
   "author": "Justin Zimmerman <justin.richard.zimmerman@gmail.com> (https://justinzimmerman.net)",
@@ -16,6 +17,7 @@
     "eslint": "^5.7.0",
     "eslint-config-prettier": "^3.1.0",
     "flow-bin": "^0.83.0",
+    "husky": "^1.1.2",
     "prettier": "^1.14.3"
   },
   "dependencies": {},
