@@ -1,15 +1,17 @@
 {
   "name": "static-testing-tools",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
   "scripts": {
-    "lint": "eslint src"
+    "lint": "eslint src",
+    "format": "prettier --write \"**/*.+(js|jsx|json|yml|yaml|css|less|scss|ts|tsx|md|mdx|graphql|vue)\""
   },
   "keywords": [],
-  "author": "",
+  "author": "Justin Zimmerman <justin.richard.zimmerman@gmail.com> (https://justinzimmerman.net)",
   "license": "MIT",
   "devDependencies": {
-    "eslint": "^5.7.0"
-  }
+    "eslint": "^5.7.0",
+    "prettier": "^1.14.3"
+  },
+  "dependencies": {},
+  "description": ""
 }
